@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './style.css';
 import App from './App.tsx';
 
-// بررسی وجود عنصر root
+// checking for root element
 const rootElement = document.getElementById('root');
 if (rootElement) {
   ReactDOM.createRoot(rootElement).render(
