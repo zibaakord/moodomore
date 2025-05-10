@@ -1,5 +1,8 @@
-// src/App.tsx
+// src/components/App.tsx
 import React, { useState } from "react";
+import FocusModeSelector from './components/focusModeSelector';
+
+
 
 const App = () => {
   const [timeLeft, setTimeLeft] = useState(25 * 60); // 25 mins for timer
