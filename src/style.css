@@ -1,0 +1,71 @@
+/* */
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --btn-bg: #007bff;
+  --btn-text: #ffffff;
+}
+
+/* midnight theme */
+:root[data-theme='midnight'] {
+  --bg: #2936aa;
+  --text: #eceff1;
+  --btn-bg: #37474f;
+  --btn-text: #eceff1;
+}
+
+/* early morning theme */
+:root[data-theme='earlyMorning'] {
+  --bg: #e0f7fa;
+  --text: #007c91;
+  --btn-bg: #2bb4c0;
+  --btn-text: #e0f7fa;
+}
+
+/* late morning theme */
+:root[data-theme='lateMorning'] {
+  --bg: #fffde7;
+  --text: #bfa800;
+  --btn-bg: #00c1fc;
+  --btn-text: #fffde7;
+}
+
+/* noon theme */
+:root[data-theme='noon'] {
+  --bg: #fff3e0;
+  --text: #ffbb00;
+  --btn-bg: #eeb02a;
+  --btn-text: #fff3e0;
+}
+
+/* afternoon theme */
+:root[data-theme='afternoon'] {
+  --bg: #f1f8e9;
+  --text: #39bdb6;
+  --btn-bg: #0875f1;
+  --btn-text: #f1f8e9;
+}
+
+/* sunset theme */
+:root[data-theme='sunset'] {
+  --bg: #ffecb3;
+  --text: #bf360c;
+  --btn-bg: #ff8f00;
+  --btn-text: #ffecb3;
+}
+
+/* evening theme */
+:root[data-theme='evening'] {
+  --bg: #2a78a0;
+  --text: #eceff1;
+  --btn-bg: #546e7a;
+  --btn-text: #eceff1;
+}
+
+/* night theme */
+:root[data-theme='night'] {
+  --bg: #05215e;
+  --text: #cfcfcf;
+  --btn-bg: #363636;
+  --btn-text: #e0e0e0;
+}
