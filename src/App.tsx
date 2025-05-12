@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import SelectModePage from "./pages/selectModePage";
+import SelectModePage from "./pages/SelectModePage";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [timeLeft, setTimeLeft] = useState(25 * 60); // 25 mins for timer
@@ -10,7 +11,10 @@ const App = () => {
   const formatTime = (time: number) => {
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
-    return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+    return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(
+      2,
+      "0"
+    )}`;
   };
 
   useEffect(() => {
@@ -54,12 +58,16 @@ const App = () => {
             element={
               <div className="timer">
                 <p className="text-4xl font-mono">{formatTime(timeLeft)}</p>
-                <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-xl shadow">Start</button>
+                <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-xl shadow">
+                  Start
+                </button>
               </div>
             }
           />
           <Route path="/select-mode" element={<SelectModePage />} />
         </Routes>
+
+        <Footer />
       </div>
     </Router>
   );

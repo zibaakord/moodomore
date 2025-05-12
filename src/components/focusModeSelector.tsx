@@ -1,7 +1,7 @@
 // src/components/FocusModeSelector.tsx
 
 import React, { useState } from 'react';
-import { focusModes } from './data/focusModes';
+import { FocusModes } from './data/FocusModes';
 
 const FocusModeSelector = () => {
   const [selectedMode, setSelectedMode] = useState<string | null>(null);

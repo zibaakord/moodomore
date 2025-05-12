@@ -1,6 +1,6 @@
 // src/pages/SelectModePage.tsx
 import React from 'react';
-import FocusModeSelector from '../components/focusModeSelector';
+import FocusModeSelector from '../components/FocusModeSelector';
 
 const SelectModePage = () => {
   return (
