@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import SelectModePage from "./pages/SelectModePage";
 import Footer from "./components/Footer";
+import { FocusModeProvider } from './context/FocusModeContext';
 
 const App = () => {
   const [timeLeft, setTimeLeft] = useState(25 * 60); // 25 mins for timer
@@ -39,6 +40,7 @@ const App = () => {
   }, []);
 
   return (
+    <FocusModeProvider>
     <Router>
       <div className="p-4">
         <h1 className="text-3xl font-bold mb-4">Moodomoro</h1>
@@ -70,6 +72,7 @@ const App = () => {
         <Footer />
       </div>
     </Router>
+    </FocusModeProvider>
   );
 };
 
